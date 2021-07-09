@@ -1,6 +1,162 @@
+/*
+# Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+Dark cyan: hsl(185, 75%, 39%)
+Very dark desaturated blue: hsl(229, 23%, 23%)
+Dark grayish blue: hsl(227, 10%, 46%)
+
+### Neutral
+
+Dark gray: hsl(0, 0%, 59%)
+
+## Typography
+
+### Body Copy
+
+- Font size (name and stats): 18px
+
+### Font
+
+- Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
+- Weights: 400, 700
+*/
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size:18px;
+  background-color:hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight:700;
+}
+
+.wrapper{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+}
+
+.bg-image-top{
+  position:fixed;
+  left:-75%;
+  top:-37.5%;
+  height:75%;
+  width:auto;
+  z-index:-1;
+}
+
+.bg-image-bottom{
+  position:fixed;
+  right:-75%;
+  bottom:-37.5%;
+  height:75%;
+  width:auto;
+  z-index:-1;
+}
+
+.card-container{
+  background-color:white;
+  border-radius:1rem;
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  width:85%;
+  box-shadow: 1px 1px 3px hsl(227, 10%, 46%);
+}
+
+.card-bg img{
+  width:100%;
+  border-radius:1rem 1rem 0 0;
+  z-index:0;
+}
+
+.card-photo{
+  position:relative;
+  margin-bottom:5rem;
+}
+
+.card-photo img{
+  position:absolute;
+  left:50%;
+  top:50%;
+  border:5px solid white;
+  border-radius:50%;
+  transform:translate(-50%,-50%);
+}
+
+.card-info{
+  margin-bottom:1.5rem;
+}
+
+.card-name{
+  display:inline-block;
+  margin-right:.3rem;
+  margin-bottom:.8rem;
+}
+
+.card-age{
+  display:inline-block;
+}
+
+.card-city{
+  font-size:.8rem;
+  letter-spacing:.05rem;
+  color:hsl(227, 10%, 46%);
+}
+
+.card-name,
+.card-number{
+  color:hsl(229, 23%, 23%);
+}
+
+.card-city,
+.card-age{
+  color:hsl(227, 10%, 46%);
+  font-weight:400;
+}
+
+.card-stats{
+  border-top:1px solid hsla(0, 0%, 59%,.2);
+  display:flex;
+  flex-direction:row;
+  padding:1.5rem 2.5rem;
+  justify-content: space-between;
+}
+
+.card-number{
+  font-weight:700;
+  margin-bottom:.5rem;
+}
+
+.card-type{
+  font-size:.6rem;
+  letter-spacing: .1rem;
+  color:hsl(0, 0%, 59%);
+  font-weight:400;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  width:100%;
+  position:fixed;
+  bottom:0;
 }
 
 .attribution a {
