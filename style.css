@@ -78,7 +78,7 @@ body{
   text-align:center;
   width:85%;
   box-shadow: 1px 1px 3px hsl(227, 10%, 46%);
-  max-width:320px;
+  max-width:300px;
 }
 
 .card-bg img{
