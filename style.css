@@ -78,6 +78,7 @@ body{
   text-align:center;
   width:85%;
   box-shadow: 1px 1px 3px hsl(227, 10%, 46%);
+  max-width:320px;
 }
 
 .card-bg img{
@@ -151,6 +152,8 @@ body{
   font-weight:400;
 }
 
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -161,4 +164,20 @@ body{
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width:375px){
+  .bg-image-top{
+    left:0;
+    top:0;
+    height:125%;
+    transform:translate(-25%,-53%);
+  }
+
+  .bg-image-bottom{
+    right:0;
+    bottom:0;
+    height:125%;
+    transform:translate(25%,60%);
+  }
 }
